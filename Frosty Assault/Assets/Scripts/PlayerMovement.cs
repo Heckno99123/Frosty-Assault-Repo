@@ -10,8 +10,9 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 
 public class PlayerMovement : MonoBehaviour
-
+    
 {
+
 
     public Camera playerCamera;
 
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float crouchSpeed = 3f;
 
+    public float ridgidbody;
 
 
     private Vector3 moveDirection = Vector3.zero;

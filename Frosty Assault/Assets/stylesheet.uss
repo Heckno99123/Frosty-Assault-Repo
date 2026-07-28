@@ -1,0 +1,4 @@
+.button {
+    font-size: 33px;
+    -unity-background-image-tint-color: rgb(103, 62, 62);
+}
