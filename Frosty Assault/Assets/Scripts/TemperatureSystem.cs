@@ -47,15 +47,20 @@ public class TemperatureSystem : MonoBehaviour
             Debug.Log("Congratulations, you win!");
             Destroy(collision.gameObject);
         }
-        if ( collision.gameObject.tag == "Fire")
+        if ( collision.gameObject.tag == "Chicken")
         {
             fire = true;
+        }
+        if (collision.gameObject.tag == "Elf")
+        {
+            gameStatus = "Lose";
+            Debug.Log("Game over, you lose.");
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if ( collision.gameObject.tag == "Fire")
+        if ( collision.gameObject.tag == "Chicken")
         {
             fire = false;
         }

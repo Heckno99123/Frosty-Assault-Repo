@@ -30,5 +30,15 @@ public class EnemyAi : MonoBehaviour
                 
             }
         }
+        else if ( enemyType == "Elf")
+        {
+            if (playerDistance <= 40)
+            {
+                Vector3 directionToMove = player.transform.position - gameObject.transform.position;
+                directionToMove = directionToMove.normalized * Time.deltaTime * moveSpeed;
+                transform.position = gameObject.transform.position + Vector3.ClampMagnitude(directionToMove, moveSpeed);
+
+            }
+        }
     }
 }
