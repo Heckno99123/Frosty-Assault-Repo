@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 
@@ -42,11 +43,11 @@ public class PlayerMovement : MonoBehaviour
 
     private CharacterController characterController;
 
-
+    public AudioClip shotgunBlast;
 
     private bool canMove = true;
 
-
+    
 
     void Start()
 
@@ -57,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         Cursor.visible = false;
+
+        
 
     }
 
@@ -89,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             moveDirection.y = jumpPower;
+
 
         }
 
