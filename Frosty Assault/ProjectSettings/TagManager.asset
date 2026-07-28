@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Play
+  - Ice
+  - End
   layers:
   - Default
   - TransparentFX
