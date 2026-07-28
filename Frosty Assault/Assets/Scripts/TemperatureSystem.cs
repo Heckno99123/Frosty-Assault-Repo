@@ -20,7 +20,6 @@ public class TemperatureSystem : MonoBehaviour
         if (gameStatus == "In Progress")
         {
             temperature = temperature - (decayRate * Time.deltaTime);
-            Debug.Log(temperature);
         }
         if ( temperature <= 0 && gameStatus == "In Progress")
         {
