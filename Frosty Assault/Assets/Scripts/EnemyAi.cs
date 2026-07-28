@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class EnemyAi : MonoBehaviour
 {
     private string enemyType;
-    public GameObject player;
+    private GameObject player;
     public float moveSpeed;
     private float playerDistance;
 
