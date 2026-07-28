@@ -11,7 +11,7 @@ public class TemperatureSystem : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        temperature = 100.0f;
+        temperature = 40.0f;
         gameStatus = "In Progress";
         fire = false;
     }
@@ -38,7 +38,7 @@ public class TemperatureSystem : MonoBehaviour
     {
         if ( collision.gameObject.tag == "Ice" )
         {
-            temperature = 100.0f;
+            temperature = 40.0f;
             Destroy(collision.gameObject);
         }
         if ( collision.gameObject.tag == "End" && gameStatus == "In Progress" )
