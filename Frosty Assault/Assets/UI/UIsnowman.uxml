@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; width: 1115px; max-height: 560px;">
+        <ui:VisualElement enabled="false" name="VisualElement" style="flex-grow: 1; bottom: -2px; height: -122px; width: auto; top: 561px; aspect-ratio: auto; min-height: -82px; max-height: 194px;"/>
+    </ui:VisualElement>
+</ui:UXML>
