@@ -7,6 +7,9 @@ TagManager:
   - Play
   - Ice
   - End
+  - EnemySpawn
+  - ChickenSpawner
+  - ElvesSpawner
   layers:
   - Default
   - TransparentFX
